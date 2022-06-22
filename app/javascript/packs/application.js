@@ -14,3 +14,6 @@ ActiveStorage.start()
 
 import "controllers"
 import "bootstrap"
+
+// The stylesheet location we created earlier
+require("../stylesheets/application.scss")

@@ -1,0 +1,38 @@
+<p> coucou show </p>
+
+  <div class="container">
+    <%= render 'form'%>
+    <% if policy(@tree).edit? %>
+      <%= link_to "edit", edit_tree_url(@tree) %>
+    <%end%>
+    <% if policy(@tree).destroy? %>
+      <%= link_to "delete", tree_path(@tree), method: :delete, data: { confirm: "Are you sure you want to remove your tree? ", class: 'text-danger'} %>
+    <%end%>
+  <%= link_to "Retours à l'accueil", root_path%>
+  </div>
+
+  <div class="container">
+       <%= simple_form_for [@tree, @adoption], url: tree_adoptions_path(tree_id: @tree.id) , method: :post, data: {controller: "adoption"} do |f| %>
+            <%= f.input :starts_at, label: "Choisie le début de ton adoption ",
+                                    as: :date,
+                                    html5: true,
+                                    required: false  %>
+            <%= f.input :ends_at, label: "Choisie la fin de ton adoption",
+                                  as: :date,
+                                  html5: true,
+                                  required: false %>
+            <%= f.input :name, label: "Donne un nom a ton adoption ",
+                                    as: :string,
+                                    html5: true,
+                                    required: false %>
+            <%= f.submit "adopte moi ! ", class: "btn btn-secondary" %>
+            <% end %>
+
+              <%= link_to "Retours à l'accueil", root_path%>
+
+      <div id="booking-form-div"
+          data-adoptions="<%= @adoptions_dates.to_json %>">
+        </div>
+
+
+   </div>

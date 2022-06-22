@@ -1,0 +1,16 @@
+<br>
+<br>
+  <div class="container">
+    <h1> Voici tout les arbres disponible </h1>
+    <div class="container-all-tree">
+      <% @trees.each do |tree| %>
+      <div class="all-trees">
+        <%= link_to tree_path(tree) do %>
+            <%= image_tag(tree.images_tree) %>
+          <h2> <%= tree.name.capitalize%> </h2>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+    <div class="accueil-btn"><%= link_to "Accueil", root_path%> </div>
+  </div>

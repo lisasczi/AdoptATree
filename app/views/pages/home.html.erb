@@ -1,14 +1,32 @@
-<div class="container">
-  <h1>Adopte un arbre</h1>
-  <p>Vous recevrez les meilleurs fruits après chaque cueillette</p>
-  <h2>Recherche un arbre autour de chez toi</h2>
-  <%= form_tag trees_path, method: :get do %>
-    <%= text_field_tag :query,
+<div class="containerhome">
+
+  <div class="titres">
+    <div class="titresite"> <h1>Bienvenu sur Adopte un arbre</h1></div>
+      <div class="soustitre"><h2>Vous recevrez les meilleurs fruits après chaque cueillette</h2></div>
+    </div>
+
+    <div class="imagehome">
+      <%= image_tag "arbreschamps.jpg"%>
+      </div>
+
+
+      <div class= "two-btn">
+        <div class= "see_trees-btn"><%= link_to "Voir les arbres", trees_path%></div>
+          <br>
+        <div class= "add_trees-btn"><%= link_to "Rajoutes un arbre ", new_tree_path%></div>
+          <br>
+      <%# <%= link_to "Voir mes adoptions ", adoption_path(adoption) %>
+      </div>
+
+
+</div>
+
+
+  <%# <h2>Recherche un arbre autour de chez toi</h2> %>
+  <%# <%= form_tag trees_path, method: :get do %>
+    <%# <%= text_field_tag :query,
       params[:query],
       class: "form-control",
       placeholder: "Enter your city" %>
-    <%= submit_tag "Search", class: "btn btn-primary" %>
-  <% end %>
-
-  <%= link_to "Voir les arbres", trees_path %>
-</div>
+    <%# <%= submit_tag "Search", class: "btn btn-primary" %>
+  <%# <% end %>

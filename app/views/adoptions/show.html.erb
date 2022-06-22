@@ -1,0 +1,13 @@
+
+<div class="container">
+  <h1> Voici tes adoption</h1>
+  <% @adoptions.each do |adoption| %>
+    <div class="your-adoption-card">
+      <li><%= adoption.tree.name %>
+        <%= adoption.starts_at %>
+        <%= adoption.ends_at %>
+        <%= adoption.name %></li>
+      </div>
+  <% end %>
+    <%= link_to "Retours à l'accueil", root_path%>
+  </div>

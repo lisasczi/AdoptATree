@@ -1,0 +1,9 @@
+ <%= simple_form_for @tree do |f| %>
+    <%= f.input :name %>
+    <%= f.input :fruits, collection: ["Apple", "Apricot", "Cherry", "Chestnut", "Coconut tree", "Fig", "Grapefruit", "Hazel", "Mandarin", "Mirabellier", "Mulberry", "Olivier", "Orange", "Pear", "Plum"] %>
+    <%= f.input :description, :input_html => { :minlength => 20, :maxlength => 280 }  %>
+    <%= f.input :address %>
+    <%= f.input :quantity_by_year %>
+    <%= f.input :price %>
+    <%= f.button :submit %>
+  <% end %>

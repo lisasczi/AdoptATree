@@ -1,0 +1,104 @@
+.containerhome {
+  background-color: #E9EFC0;
+  height: 55vw;
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+
+.titres{
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap: nowrap;
+  // align-content: space-around;
+  // justify-content: space-evenly;
+}
+
+.titresite{
+  font-size: 50px;
+  text-align: center;
+  padding: 4vw;
+}
+
+.soustitre{
+  font-size: 25px;
+  text-align: center;
+  padding: 2vw;
+}
+
+.imagehome img{
+  height: 115%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 90px 90px 90px 90px !important;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.two-btn{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+}
+
+.see_trees-btn a{
+  background: #83BD75;
+  border-radius: 15px;
+  padding: 0.8vw;
+  letter-spacing: 0.5px;
+  border: 1px solid #83BD75;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-size: 2vw;
+  color: white !important;
+  text-decoration: none !important;
+
+
+  // margin-left: 30%;
+  // margin-top: -8%;
+}
+
+.see_trees-btn:hover a{
+  background: #4E944F;
+  border-radius: 15px;
+  letter-spacing: 0.5px;
+  border: 1px solid #4E944F;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-size: 2vw;
+  color: white !important;
+  text-decoration: none !important;
+  padding: 0.8vw;
+  // margin-left: 30%;
+  // margin-top: -8%;
+}
+
+.add_trees-btn a{
+  background: #83BD75;
+  border-radius: 15px;
+  letter-spacing: 0.5px;
+  border: 1px solid #83BD75;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-size: 2vw;
+  color: white !important;
+  text-decoration: none !important;
+  padding: 0.8vw;
+  // margin-left: 30%;
+  // margin-top: -8%;
+}
+
+.add_trees-btn:hover a{
+  background: #4E944F;
+  border-radius: 15px;
+  letter-spacing: 0.5px;
+  border: 1px solid #4E944F;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-size: 2vw;
+  color: white !important;
+  text-decoration: none !important;
+  padding: 0.8vw;
+
+  // margin-left: 30%;
+  // margin-top: -8%;
+}

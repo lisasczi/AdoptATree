@@ -1,0 +1,85 @@
+.container {
+  background-color: #E9EFC0;
+}
+
+.container h1 {
+  color: #83BD75;
+  font-size: 50px;
+  padding: 5%;
+  text-align: center;
+}
+
+.container-all-tree{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 16%;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+
+.all-trees h2 {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  margin: -8vw;
+  font-size: 20px;
+
+}
+
+.all-trees img {
+  height: 115%;
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 10vw;
+  border-radius: 15px;
+}
+
+.all-trees {
+  height: 26vw;
+  width: 22vw;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+  margin: 1%;
+  background-color: white !important;
+  border-radius: 15px;
+  position: relative;
+}
+
+.accueil-btn a{
+  position: absolute;
+  margin-top: 10px;
+  background: #83BD75;
+  border-radius: 15px;
+  padding: 1% 5% !important;
+  letter-spacing: 0.5px;
+  border: 1px solid #83BD75;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-size: 2vw;
+  color: white !important;
+  text-decoration: none !important;
+  margin-left: 30%;
+  margin-top: -8%;
+}
+
+.accueil-btn:hover a{
+  position: absolute;
+  margin-top: 10px;
+  background: #4E944F;
+  border-radius: 15px;
+  padding: 1% 5% !important;
+  letter-spacing: 0.5px;
+  border: 1px solid #4E944F;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-size: 2vw;
+  color: white !important;
+  text-decoration: none !important;
+  margin-left: 30%;
+  margin-top: -8%;
+}
+
+a{
+  text-decoration: none !important;
+}
