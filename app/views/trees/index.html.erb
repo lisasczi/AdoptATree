@@ -6,7 +6,7 @@
       <% @trees.each do |tree| %>
       <div class="all-trees">
         <%= link_to tree_path(tree) do %>
-            <%= image_tag(tree.images_tree) %>
+            <%# <%= image_tag(tree.images_tree) %>
           <h2> <%= tree.name.capitalize%> </h2>
         <% end %>
       </div>

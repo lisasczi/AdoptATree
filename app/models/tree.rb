@@ -23,26 +23,26 @@ class Tree < ApplicationRecord
   #   end
   # end
 
-  def images_tree
-    case fruits
-    when 'Apple' then "apple.png"
-    when ' Apricot' then "apricot.jpg"
-    when 'Cherry' then "cherry.jpg"
-    when 'Chestnut' then "chestnut.jpg"
-    when 'Coconut tree' then "coconut.jpg"
-    when 'Fig' then "fig.jpg"
-    when 'Grapefruit' then "grapefruit.jpg"
-    when 'Hazel' then "hazel.jpg"
-    when 'Mandarin' then "mandarin.jpg"
-    when 'Mango' then "mango.jpg"
-    when 'Mirabellier' then "mirabellier.jpg"
-    when 'Mulberry' then "mulberry.jpg"
-    when 'Olivier' then "olivier.jpg"
-    when 'Orange' then "oranger.jpg"
-    when 'Pear' then "pear.jpg"
-    when 'Plum' then "plum.jpg"
-    end
-  end
+  # def images_tree
+  #   case fruits
+  #   when 'Apple' then "apple.png"
+  #   when ' Apricot' then "apricot.jpg"
+  #   when 'Cherry' then "cherry.jpg"
+  #   when 'Chestnut' then "chestnut.jpg"
+  #   when 'Coconut tree' then "coconut.jpg"
+  #   when 'Fig' then "fig.jpg"
+  #   when 'Grapefruit' then "grapefruit.jpg"
+  #   when 'Hazel' then "hazel.jpg"
+  #   when 'Mandarin' then "mandarin.jpg"
+  #   when 'Mango' then "mango.jpg"
+  #   when 'Mirabellier' then "mirabellier.jpg"
+  #   when 'Mulberry' then "mulberry.jpg"
+  #   when 'Olivier' then "olivier.jpg"
+  #   when 'Orange' then "oranger.jpg"
+  #   when 'Pear' then "pear.jpg"
+  #   when 'Plum' then "plum.jpg"
+  #   end
+  # end
 
   def available?(from, to)
     adoptions.where('starts_at_booking <= ? AND ends_at_booking >= ?', to, from).none?
